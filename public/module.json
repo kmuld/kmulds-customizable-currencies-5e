@@ -1,0 +1,35 @@
+{
+  "id": "kmulds-customizable-currency-5e",
+  "title": "Kmuld's Customizable Currency",
+  "description": "Create customized currencies for your world with this D&D5e module.",
+  "authors": [{ "name": "kmuld" }],
+  "version": "0.0.0",
+  "compatibility": {
+    "minimum": "11",
+    "verified": "11.315"
+  },
+  "esmodules": ["./main.js"],
+  "styles": ["./style.css"],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "languages/en.json"
+    }
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": {
+          "minimum": "2.4.1",
+          "verified": "2.4.1"
+        }
+      }
+    ]
+  },
+  "url": "https://github.com/kmuld/kmulds-customizable-currency-5e",
+  "manifest": "https://raw.githubusercontent.com/kmuld/kmulds-customizable-currency-5e/master/module.json",
+  "download": "https://github.com/kmuld/kmulds-customizable-currency-5e/archive/master.zip"
+}

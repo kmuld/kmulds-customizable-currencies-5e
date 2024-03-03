@@ -1,0 +1,6 @@
+{
+  "dataPath": {
+    "linux": "~/foundry_data",
+    "win32": "C:\\foundry_data\\"
+  }
+}
