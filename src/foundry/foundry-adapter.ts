@@ -1,8 +1,7 @@
 import { CONSTANTS } from 'src/constants';
-import { CucuSetting } from 'src/types/types';
 
 const FoundryAdapter = {
-  registerCucuSetting(key: string, setting: CucuSetting): void {
+  registerCucuSetting(key: string, setting: any): void {
     game.settings.register(CONSTANTS.MODULE_ID, key, setting);
   },
 
