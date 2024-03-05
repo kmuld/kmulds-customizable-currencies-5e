@@ -4,8 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "prepare-dev": "node prepare-dist-for-dev.js",
-    "dev": "npm run prepare-dev && vite",
+    "create-link": "ln -s ~/Repos/kmulds-customizable-currencies-5e/dist/* ~/foundrydata/Data/modules/kmulds-customizable-currency-5e",
     "build": "vite build",
     "build-watch": "vite build --watch",
     "preview": "vite preview"
