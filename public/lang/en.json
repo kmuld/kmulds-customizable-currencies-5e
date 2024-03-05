@@ -1,1 +1,4 @@
-{}
+{
+  "CUCU.Helloworld.name": "Hello world",
+  "CUCU.Helloworld.hint": "This is a test setting"
+}

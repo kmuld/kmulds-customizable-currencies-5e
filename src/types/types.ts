@@ -4,6 +4,7 @@ export type CucuSetting = {
     hint: string;
     scope: 'world' | 'client';
     default: boolean;
+    config: boolean;
     type: any;
     choices?: any;
     requiresReload: boolean;

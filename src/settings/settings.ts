@@ -4,10 +4,11 @@ import type { CucuSettings } from 'src/types/types';
 const cucuSettings = {
   testsetting: {
     data: {
-      name: 'Cucu.test.setting',
-      hint: 'This is a test setting',
+      name: 'CUCU.Helloworld.name',
+      hint: 'CUCU.Helloworld.hint',
       scope: 'world',
       default: false,
+      config: true,
       type: Boolean,
       requiresReload: false,
     },
@@ -18,7 +19,7 @@ const cucuSettings = {
 } satisfies CucuSettings;
 
 export function initSettings() {
-  for (let settingKey in Object.keys(cucuSettings)) {
-    fvtt.registerCucuSetting(settingKey, Object.values(cucuSettings)[settingKey]);
+  for (let setting of Object.entries(cucuSettings)) {
+    fvtt.registerCucuSetting(setting[0], setting[1].data);
   }
 }
